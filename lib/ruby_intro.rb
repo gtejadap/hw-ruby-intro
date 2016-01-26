@@ -3,25 +3,36 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  sum = 0
+  arr.each{|x| sum += x}
+  return sum
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  if(arr.length == 0)
+    return 0
+    elsif (arr.length == 1)
+    return arr[0]
+  else
+  arr.sort!{|x,y| y <=> x }
+  max_2_sum = arr[0] + arr[1]
+  return max_2_sum
+end
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  for i in 0..arr.length - 1
+  
 end
 
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  return "Hello, #{name}"
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+ 
 end
 
 def binary_multiple_of_4? s
